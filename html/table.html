@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border:solid 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>순번</th>
+            <th>책이름</th>
+            <th>가격</th>
+            <th>판매량</th>
+            <th>판매액</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Notion</td>
+            <td>7,000</td>
+            <td rowspan="2">1,000</td>
+            <td>7,000,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>노션</td>
+            <td>8,000</td>
+            <td>8,000,000</td>
+        </tr>
+        <tr>
+            <td colspan="4">총액</td>
+            <td>15,000,000</td>
+        </tr>
+    </table>
+</body>
+</html>
