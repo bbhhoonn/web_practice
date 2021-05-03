@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">hello world</div>
+    <div class="one two" id="three">hello world two</div>
+    <div class="one two four">hello world</div>
+    <script>
+        // 단일 element를 반환하는 함수
+        // document.getElementById('id')
+        // document.querySelector('query')
+        // 복수의 element를 반환하는 함수
+        // document.getElementsByName('name')
+        // document.getElementsByClassName('className')
+        // document.querySelectorAll('query')
+    k=document.getElementsByClassName('one');
+    console.log(k);
+    document.write(k['0']['innerHTML']);
+    document.write('<br>');
+    document.write(k['2']['className']);
+    </script>
+</body>
+</html>

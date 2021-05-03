@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=10;
+        {var i=100;}
+        document.write(i);
+        document.write('<br>');
+        let j=10;
+        {let j=200;}
+        document.write(j);
+        document.write('<br>');
+       {const k=300;}
+        document.write(k);
+        function f(){
+            var fvar=400;
+        }
+        document.write(fvar);
+        // let과 const는 block-level scope로 블럭 안에서 선언된 것은
+        // 빠져나오지 못함 const는 재할당 불가(객체 내용은 변경 가능)
+    </script>
+</body>
+</html>

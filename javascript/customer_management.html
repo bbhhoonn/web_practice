@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border:solid 1px black;
+            border-collapse: collapse;
+        }
+        th{
+            width: 15vw;
+        }   
+    </style>
+</head>
+<body>
+    <!-- json generator로 데이터 -->
+    <table>
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>age</th>
+            <th>name</th>
+            <th>gender</th>
+            <th>company</th>
+            <th>email</th>
+            <th>phone</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <script src="user.js"></script>
+    <script>
+        for (var i=0; i<user.length;i++){
+            $('tbody').append('<tr>');
+            $('tbody').append('<td>'+user[i]['_id']+'</td>');
+            $('tbody').append('<td>'+user[i]['age']+'</td>');
+            $('tbody').append('<td>'+user[i]['name']+'</td>');
+            $('tbody').append('<td>'+user[i]['gender']+'</td>');
+            $('tbody').append('<td>'+user[i]['company']+'</td>');
+            $('tbody').append('<td>'+user[i]['email']+'</td>');
+            $('tbody').append('<td>'+user[i]['phone']+'</td>');
+            $('tbody').append('</tr>');
+        }
+    </script>
+</body>
+</html>

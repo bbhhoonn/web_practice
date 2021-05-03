@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>hello world 1</h1>
+    <h1>hello world 2</h1>
+    <h1>hello world 3</h1>
+    <h1>hello world 4</h1>
+    <h1>hello world 5</h1>
+    <h1>hello world 6</h1>
+    <button id="one">누르세요</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $('#one').click(
+            function f(){
+                $('h1:first').html('<mark>반갑습니다!</mark>').fadeOut(3000).fadeIn(3000);
+                $('h1:odd').text('<mark>반갑습니다!</mark>');
+            }
+        )
+    // jQuery는 element를 선택할 수 있는 강력한 방법
+    // 선택된 element를 효율적으로 제어할 수 있는 방법
+
+    // $(#id) id만 선택
+    // $(.class) class만 선택
+    // $(h1.class) h1에 class의 조합이 된 element를 선택
+    // $(h1.class.classtwo#idone#idtwo) 조합된 element 선택
+    // $(#id) id만 선택
+
+    // 필터(기본필터, 속성필터, 차일드필터, 컨텐츠필터)
+    // :even :odd
+    // :first :last
+    // :nth-child(2) nth-child(2n)
+    // etx
+
+    // 메서드(속성값 변경, DOM 탐색, css, 이벤트, 효과, etc)
+    // .text
+    // .html
+    // .val
+    // .hide
+    // .show
+    // .fadein
+    // .fadeout
+    </script>
+</body>
+</html>
